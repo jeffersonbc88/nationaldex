@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    background: rgb(128, 125, 125);
+}
+
+body {
+    overflow-y: scroll;
+}
+
+.div-geral {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #000;
+}
+
+.div-cabecalho {
+    height: 150px;
+    border: 1px solid #000;
+}
+
+.div-conteudo {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #000;
+}
+
+.div-menu {
+    display: flex;
+    width: 300px;
+    border: 1px solid #000;
+}
+
+.div-principal {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.navegacao {
+    display: flex;
+    justify-content: center;
+}
+.nat-dex-title {
+    padding: 10px 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 36px;
+    font-family: sans-serif;
+}
+
+.seletor {
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.tipos, .letras, .filtros {
+    display: inline-flex;
+    margin: 5px;
+    border-radius: 3px;
+    padding: 5px;
+    background-color: rgb(161, 159, 159);
+    width: auto;
+}
+
+.tipos ul, .letras ul, .filtros ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    padding: 0;
+    margin: 0;
+    background-color: inherit;
+}
+
+.tipos ul li, .letras ul li, .filtros ul li {
+    list-style: none;
+}
+
+.grayed {
+    border: 1px solid #FFF;
+    vertical-align: middle;
+    filter: opacity(25%);
+    cursor: pointer;
+}
+
+.grayed-letra {
+    border: 1px solid #FFF;
+    vertical-align: middle;
+    filter: opacity(15%);
+    cursor: pointer;
+}
+
+.colored {
+    filter: none;
+}
+
+.margens {
+    margin: 5px;
+}
+
+.espacamento {
+    height: 80px;
+}
+
+.cabecalho {
+    position: sticky;
+    top: 5px;
+}
+
+.tabela {
+    font-family: sans-serif;
+    width: 100%;
+    border-spacing: 2px;
+}
+
+.celula {
+    padding: 2px 1px;
+    background-color: rgb(27, 11, 59);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 13px;
+    border-radius: 3px;
+}
+
+.poke,
+.type,
+.test {
+    background-color: rgb(156, 135, 199);
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.lista .poke img {
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+}
+
+.lista .type img {
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    border: 1px solid rgb(149, 93, 212);
+}
+
+.lista .poke span {
+    background-color: inherit;
+    cursor: pointer;
+    /* font-style: italic; */
+    /* padding: 8px; */
+}
+
+.lista .poke span title {
+    font-size: 20px;
+}
+
+.botao {
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    background-color: rgb(59, 4, 95);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 40px;
+    opacity: 0.6;
+}
+
+.botao .texto-botao {
+    font-size: 30px;
+    color: #000;
+    background-color: inherit;
+}
+
+.botao-letra {
+    color: #FFF;
+    background-color: #000;
+    border: 1px solid #FFF;
+    display: flex;
+    font-size: 19px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 28px;
+    width: 28px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.botao-filtro {
+    padding-left: 3px;
+    padding-right: 3px;
+    color: #FFF;
+    background-color: #000;
+    border: 1px solid #FFF;
+    display: flex;
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 28px;
+    /* width: 28px; */
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
